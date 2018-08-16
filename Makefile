@@ -41,6 +41,6 @@ run-test-image-interactive:
 remove-test-container:
 	docker rm -f angular2-example1-test
 run-container-shell:
-	docker rm -f angular2-example1-test /bin/sh
+	docker exec -it angular2-example1-test /bin/sh 
 container-logs:
 	docker logs angular2-example1-test
